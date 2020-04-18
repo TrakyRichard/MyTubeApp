@@ -6,7 +6,7 @@ import VideoItem from './videoItem';
 const VideoList = ({videos, onVideoSelect}) =>{    
     const listOfVideos = videos.map((video, index) => <VideoItem onVideoSelect={onVideoSelect} key={index} video={video} />)
     return (
-        <Grid container spacing={3}>
+        <Grid style={{padding: '10px'}}>
             {listOfVideos}
         </Grid>
         );

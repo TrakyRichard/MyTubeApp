@@ -36,15 +36,15 @@ class App extends React.Component {
         return (
             <Grid justify="center" container spacing={10}>
                 <Grid item xs={12}>
-                    <Grid container spacing={10}>
+                    <Grid container>
                         <Grid item xs={12}>
                             <SearchBar onFormSubmit={this.handleSubmit} />
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
                             <VideoDetails video={ selectedVideo } />
                         </Grid>
 
-                        <Grid item xs={4}>
+                        <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                            <VideoList videos={videos} onVideoSelect = {this.onVideoSelect}/>
                         </Grid>
                     </Grid>
